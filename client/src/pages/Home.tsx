@@ -306,128 +306,120 @@ export default function Home() {
       </section>
 
           {/* Meet Our Attorneys (UPDATED: uses 1..5.png images + View Profile buttons) */}
-      <section className="py-24 bg-muted/20">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-4">Meet Our Attorneys</h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
-            <p className="text-muted-foreground text-lg">
-              Our team of dedicated legal professionals is committed to fighting for your rights.
-            </p>
-          </div>
+  <section className="py-24 bg-muted/20">
+  <div className="container mx-auto px-4">
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      <h2 className="font-serif text-4xl font-bold text-primary mb-4">Meet Our Attorneys</h2>
+      <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
+      <p className="text-muted-foreground text-lg">
+        Our team of dedicated legal professionals is committed to fighting for your rights.
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mb-16">
-            {/* Eric L. Ansel */}
-            <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-              <div className="aspect-[4/5] overflow-hidden relative">
-                <img 
-                  src={team1}
-                  alt="Eric L. Ansel"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <p className="text-white text-sm">"Fighting for the injured since 1984."</p>
-                </div>
-              </div>
-              <div className="p-6 text-center border-b-4 border-transparent group-hover:border-accent transition-colors flex-grow flex flex-col justify-end">
-                <h3 className="font-serif text-xl font-bold text-primary mb-1">Eric L. Ansel</h3>
-                <p className="text-accent font-bold uppercase tracking-widest text-xs">ATTORNEY AT LAW</p>
-                <Link href="/attorney/eric-l-ansel">
-                  <Button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white">View Profile</Button>
-                </Link>
-              </div>
-            </div>
+    {/* ⭐ ONE GRID, 5 COLUMNS ⭐ */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto mb-16">
 
-            {/* Michael Palahach III */}
-            <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-              <div className="aspect-[4/5] overflow-hidden relative">
-                <img 
-                  src={team2}
-                  alt="Michael Palahach III"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <p className="text-white text-sm">"Dedicated to excellence in every case."</p>
-                </div>
-              </div>
-              <div className="p-6 text-center border-b-4 border-transparent group-hover:border-accent transition-colors flex-grow flex flex-col justify-end">
-                <h3 className="font-serif text-xl font-bold text-primary mb-1">Michael Palahach III</h3>
-                <p className="text-accent font-bold uppercase tracking-widest text-xs">ATTORNEY AT LAW</p>
-                <Link href="/attorney/michael-palahach-iii">
-                  <Button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white">View Profile</Button>
-                </Link>
-              </div>
-            </div>
-
-            {/* Donald T. Norton */}
-            <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-              <div className="aspect-[4/5] overflow-hidden relative">
-                <img 
-                  src={team3}
-                  alt="Donald T. Norton"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6 text-center border-b-4 border-transparent group-hover:border-accent transition-colors flex-grow flex flex-col justify-end">
-                <h3 className="font-serif text-xl font-bold text-primary mb-1">Donald T. Norton</h3>
-                <p className="text-accent font-bold uppercase tracking-widest text-xs">PARTNER</p>
-                <Link href="/attorney/donald-t-norton">
-                  <Button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white">View Profile</Button>
-                </Link>
-              </div>
-            </div>
-
-            {/* Clemens Soares */}
-            <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-              <div className="aspect-[4/5] overflow-hidden relative">
-                <img 
-                  src={team4}
-                  alt="Clemens Soares"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6 text-center border-b-4 border-transparent group-hover:border-accent transition-colors flex-grow flex flex-col justify-end">
-                <h3 className="font-serif text-xl font-bold text-primary mb-1">Clemens Soares</h3>
-                <p className="text-accent font-bold uppercase tracking-widest text-xs">ATTORNEY AT LAW</p>
-                <Link href="/attorney/clemens-soares">
-                  <Button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white">View Profile</Button>
-                </Link>
-              </div>
-            </div>
-
-          </div>
-
-          {/* second row, centered container for Jon (or you can keep in grid if you want even five across) */}
-          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-8">
-            {/* Jon A. Zepnick */}
-            <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-              <div className="aspect-[4/5] overflow-hidden relative">
-                <img 
-                  src={team5}
-                  alt="Jon A. Zepnick"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6 text-center border-b-4 border-transparent group-hover:border-accent transition-colors flex-grow flex flex-col justify-end">
-                <h3 className="font-serif text-xl font-bold text-primary mb-1">Jon A. Zepnick</h3>
-                <p className="text-accent font-bold uppercase tracking-widest text-xs">ATTORNEY AT LAW</p>
-                <Link href="/attorney/jon-a-zepnick">
-                  <Button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white">View Profile</Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Button to full team */}
-          <div className="text-center mt-12">
-            <Link href="/attorney-profiles">
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-                View Full Team
-              </Button>
-            </Link>
-          </div>
+      {/* Eric */}
+      <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+        <div className="aspect-[4/5] overflow-hidden relative">
+          <img 
+            src={team1}
+            alt="Eric L. Ansel"
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          />
         </div>
-      </section>
+        <div className="p-6 text-center border-b-4 border-transparent group-hover:border-accent transition-colors flex-grow flex flex-col justify-end">
+          <h3 className="font-serif text-xl font-bold text-primary mb-1">Eric L. Ansel</h3>
+          <p className="text-accent font-bold uppercase tracking-widest text-xs">ATTORNEY AT LAW</p>
+          <Link href="/attorney/eric-l-ansel">
+            <Button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white">View Profile</Button>
+          </Link>
+        </div>
+      </div>
+
+      {/* Michael */}
+      <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+        <div className="aspect-[4/5] overflow-hidden relative">
+          <img 
+            src={team2}
+            alt="Michael Palahach III"
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <div className="p-6 text-center border-b-4 border-transparent group-hover:border-accent transition-colors flex-grow flex flex-col justify-end">
+          <h3 className="font-serif text-xl font-bold text-primary mb-1">Michael Palahach III</h3>
+          <p className="text-accent font-bold uppercase tracking-widest text-xs">ATTORNEY AT LAW</p>
+          <Link href="/attorney/michael-palahach-iii">
+            <Button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white">View Profile</Button>
+          </Link>
+        </div>
+      </div>
+
+      {/* Donald */}
+      <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+        <div className="aspect-[4/5] overflow-hidden relative">
+          <img 
+            src={team3}
+            alt="Donald T. Norton"
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <div className="p-6 text-center border-b-4 border-transparent group-hover:border-accent transition-colors flex-grow flex flex-col justify-end">
+          <h3 className="font-serif text-xl font-bold text-primary mb-1">Donald T. Norton</h3>
+          <p className="text-accent font-bold uppercase tracking-widest text-xs">PARTNER</p>
+          <Link href="/attorney/donald-t-norton">
+            <Button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white">View Profile</Button>
+          </Link>
+        </div>
+      </div>
+
+      {/* Clemens */}
+      <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+        <div className="aspect-[4/5] overflow-hidden relative">
+          <img 
+            src={team4}
+            alt="Clemens Soares"
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <div className="p-6 text-center border-b-4 border-transparent group-hover:border-accent transition-colors flex-grow flex flex-col justify-end">
+          <h3 className="font-serif text-xl font-bold text-primary mb-1">Clemens Soares</h3>
+          <p className="text-accent font-bold uppercase tracking-widest text-xs">ATTORNEY AT LAW</p>
+          <Link href="/attorney/clemens-soares">
+            <Button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white">View Profile</Button>
+          </Link>
+        </div>
+      </div>
+
+      {/* Jon – Now part of the same row */}
+      <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+        <div className="aspect-[4/5] overflow-hidden relative">
+          <img 
+            src={team5}
+            alt="Jon A. Zepnick"
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <div className="p-6 text-center border-b-4 border-transparent group-hover:border-accent transition-colors flex-grow flex flex-col justify-end">
+          <h3 className="font-serif text-xl font-bold text-primary mb-1">Jon A. Zepnick</h3>
+          <p className="text-accent font-bold uppercase tracking-widest text-xs">ATTORNEY AT LAW</p>
+          <Link href="/attorney/jon-a-zepnick">
+            <Button className="mt-4 w-full bg-primary hover:bg-primary/90 text-white">View Profile</Button>
+          </Link>
+        </div>
+      </div>
+    </div>
+
+    <div className="text-center mt-12">
+      <Link href="/attorney-profiles">
+        <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+          View Full Team
+        </Button>
+      </Link>
+    </div>
+  </div>
+</section>
+
 
       {/* Practice Areas */}
       <section className="py-20 bg-muted/30">

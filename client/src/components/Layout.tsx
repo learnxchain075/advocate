@@ -68,7 +68,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       {/* Top Banner */}
-      <div className="bg-primary text-primary-foreground py-2 text-xs md:text-sm">
+      <div className="bg-primary hidden sm:block text-primary-foreground py-2 text-xs md:text-sm">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-2">
@@ -163,7 +163,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 ))}
 
                 {/* Mobile Language Selector */}
-                <div className="mt-2">
+                <div className="mt-2  ">
                   <span className="flex items-center gap-2 flex-wrap">
                     <Globe className="h-3 w-3 md:h-4 md:w-4 shrink-0" />
                     <span className="shrink-0">{t("nav.we_speak")}</span>

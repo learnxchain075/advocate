@@ -8,13 +8,13 @@ import {
   BookOpen,
   Scale,
   Gavel,
-  Handshake, // Represents Mediator
-  Trophy, // Represents Sports Background
+  Handshake,
+  Trophy, 
   ChevronRight,
   Download,
   Calendar
 } from "lucide-react";
-import team2 from "@assets/generated_images/2.png"; // Michael Palahach III
+import team2 from "@assets/generated_images/2.png";
 
 export default function MichaelPalahachProfile() {
   return (
@@ -212,11 +212,9 @@ export default function MichaelPalahachProfile() {
                 </ul>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
     </div>
   );
 }
