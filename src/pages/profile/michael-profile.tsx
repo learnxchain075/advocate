@@ -14,7 +14,7 @@ import {
   Download,
   Calendar
 } from "lucide-react";
-import team2 from "@assets/generated_images/2.png";
+import team2 from "../../assets/generated_images/2.png";
 
 export default function MichaelPalahachProfile() {
   return (

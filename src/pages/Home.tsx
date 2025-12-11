@@ -10,26 +10,24 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import heroImage from "@assets/generated_images/professional_law_team_hero.png";
-import ericAnselImage from "@assets/generated_images/eric_ansel_placeholder.png";
-import markMillerImage from "@assets/generated_images/professional_headshot_of_attorney_mark_miller.png";
-import jonZepnickImage from "@assets/generated_images/professional_headshot_of_attorney_jon_zepnick.png";
-import ofCounselImage from "@assets/generated_images/professional_headshot_of_of-counsel_attorney.png";
-import avBadge from "@assets/generated_images/av_preeminent_rating_badge.png";
-import superLawyersBadge from "@assets/generated_images/super_lawyers_badge.png";
-import millionDollarBadge from "@assets/generated_images/million_dollar_advocates_badge.png";
-import top100Badge from "@assets/generated_images/top_100_trial_lawyers_badge.png";
-import justiceImage from "@assets/generated_images/abstract_justice_scales.png";
-import lobbyImage from "@assets/generated_images/modern_law_office_lobby.png";
+import heroImage from "../assets/generated_images/professional_law_team_hero.png";
+import ericAnselImage from "../assets/generated_images/eric_ansel_placeholder.png";
+
+import avBadge from "../assets/generated_images/av_preeminent_rating_badge.png";
+import superLawyersBadge from "../assets/generated_images/super_lawyers_badge.png";
+import millionDollarBadge from "../assets/generated_images/million_dollar_advocates_badge.png";
+import top100Badge from "../assets/generated_images/top_100_trial_lawyers_badge.png";
+import justiceImage from "../assets/generated_images/abstract_justice_scales.png";
+import lobbyImage from "../assets/generated_images/modern_law_office_lobby.png";
 import { useLanguage } from "@/lib/i18n";
 
 
 
-import team1 from "@assets/generated_images/1.png"; // Eric L. Ansel
-import team2 from "@assets/generated_images/2.png"; // Michael Palahach III
-import team3 from "@assets/generated_images/3.png"; // Donald T. Norton
-import team4 from "@assets/generated_images/4.png"; // Clemens Soares
-import team5 from "@assets/generated_images/5.png"; // Jon A. Zepnick
+import team1 from "../assets/generated_images/1.png"; // Eric L. Ansel
+import team2 from "../assets/generated_images/2.png"; // Michael Palahach III
+import team3 from "../assets/generated_images/3.png"; // Donald T. Norton
+import team4 from "../assets/generated_images/4.png"; // Clemens Soares
+import team5 from "../assets/generated_images/5.png"; // Jon A. Zepnick
 
 export default function Home() {
   const { t } = useLanguage();

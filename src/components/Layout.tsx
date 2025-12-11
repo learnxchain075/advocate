@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 // import logoImage from "@assets/generated_images/ansel_&_miller_logo.png";
-import logoImage from "@assets/generated_images/ans.png";
+import logoImage from "../assets/generated_images/ans.png";
 import { useLanguage, Language } from "@/lib/i18n";
 
 export default function Layout({ children }: { children: React.ReactNode }) {

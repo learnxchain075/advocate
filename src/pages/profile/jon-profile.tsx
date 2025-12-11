@@ -13,7 +13,7 @@ import {
   Briefcase,
   Map
 } from "lucide-react";
-import team5 from "@assets/generated_images/5.png"; // Jon A. Zepnick
+import team5 from "../../assets/generated_images/5.png"; // Jon A. Zepnick
 
 export default function JonZepnickProfile() {
   return (

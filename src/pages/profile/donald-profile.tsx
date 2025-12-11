@@ -13,7 +13,7 @@ import {
   ChevronRight, 
   Download
 } from "lucide-react";
-import team3 from "@assets/generated_images/3.png"; // Donald T. Norton
+import team3 from "../../assets/generated_images/3.png"; // Donald T. Norton
 
 export default function DonaldNortonProfile() {
   return (

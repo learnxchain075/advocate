@@ -1,15 +1,15 @@
-import { motion } from "framer-motion";
+
 import { Shield, Award, Users, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import heroImage from "@assets/generated_images/professional_law_team_hero.png";
+import heroImage from "../assets/generated_images/professional_law_team_hero.png";
 
 // team images (pattern 1.png ... 5.png)
-import team1 from "@assets/generated_images/1.png"; // Eric L. Ansel
+import team1 from "../assets/generated_images/1.png"; // Eric L. Ansel
 import team2 from "@assets/generated_images/2.png"; // Michael (if needed)
-import team3 from "@assets/generated_images/3.png"; // Donald T. Norton
-import team4 from "@assets/generated_images/4.png"; // Clemens Soares
-import team5 from "@assets/generated_images/5.png"; // Jon A. Zepnick
+import team3 from "../assets/generated_images/3.png"; // Donald T. Norton
+import team4 from "../assets/generated_images/4.png"; // Clemens Soares
+import team5 from "../assets/generated_images/5.png"; // Jon A. Zepnick
 
 export default function About() {
   const attorneys = [

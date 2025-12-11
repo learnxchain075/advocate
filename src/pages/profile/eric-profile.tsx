@@ -16,7 +16,7 @@ import {
   ChevronRight,
   Download
 } from "lucide-react";
-import team1 from "@assets/generated_images/1.png"; // Eric L. Ansel
+import team1 from "../../assets/generated_images/1.png"; // Eric L. Ansel
 
 export default function EricAnselProfile() {
   return (

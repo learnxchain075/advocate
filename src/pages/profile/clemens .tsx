@@ -11,7 +11,7 @@ import {
   Download,
   Calendar
 } from "lucide-react";
-import team4 from "@assets/generated_images/4.png"; // Clemens Soares
+import team4 from "../../assets/generated_images/4.png"; // Clemens Soares
 
 export default function ClemensSoaresProfile() {
   return (
